@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+        url(coverpage.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+article {
+    display: flex;
+    width: 80%;
+    padding: 10%;
+    justify-content: space-between;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+ol {
+    margin-top: 15px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+li {
+    color: cornsilk;
+}
+
+.edit {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    justify-self: flex-end;
+    background-color: #e7e7e7;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+aside {
+    width: 20%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+span {
+    font-size: 10px;
+}
