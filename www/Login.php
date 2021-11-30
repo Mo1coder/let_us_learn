@@ -1,4 +1,6 @@
 <?php 
+include("../config/db_login.php");
+
 session_start();
 
 
@@ -44,7 +46,7 @@ if(strtoupper($_SERVER["REQUEST_METHOD"]) == "POST"){
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <!-- Font Awesome CSS -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
-    <link rel='stylesheet' href='master.css'>
+    <link rel='stylesheet' href='../src/css/master.css'>
 
 
 </head>

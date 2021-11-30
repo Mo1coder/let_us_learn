@@ -1,11 +1,7 @@
 <?php 
 session_start();
+include("../config/db_login.php");
 
-// configuer database
-$server = "localhost";
-$user_db = "root";
-$pass_db = "";
-$db = "learn";
 
 $ERRORS = array('fname' => '', 'lname' =>'', 'email' => '', 'confirm_email' => '', 'password' => '',  'id' => '');
 $input = array('fname' => '', 'lname' =>'', 'email' => '', 'confirm_email' => '', 'password' => '',  'id' => '');
@@ -66,7 +62,8 @@ if(strtoupper($_SERVER["REQUEST_METHOD"]) == "POST"){
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
 <!-- Font Awesome CSS -->
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
-<link rel='stylesheet' href='master.css'>
+<link rel='stylesheet' href='../src/css/master.css'>
+<link rel='stylesheet' href="../src/css/register.css"
 
         
     </head>
