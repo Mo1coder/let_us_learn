@@ -1,11 +1,9 @@
 <?php 
+include("../config/db_login.php");
 session_start();
 
 // configuer database
-$server = "localhost";
-$user_db = "root";
-$pass_db = "";
-$db = "learn";
+
 
 $message = "";
 $conn = mysqli_connect($server, $user_db, $pass_db, $db);
@@ -31,7 +29,7 @@ $result = mysqli_query($conn, $sql);
   <!-- Font Awesome CSS -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
 
-  <link rel='stylesheet' href='master.css'>
+  <link rel='stylesheet' href='../src/css/master.css'>
 
 
 </head>
@@ -47,15 +45,15 @@ $result = mysqli_query($conn, $sql);
     <li><a href="#about">Link 1</a></li>
     <li><a href="#about">Link 2</a></li>
     <li><a href="#about">About</a></li>
-    <li style="float:right"><a class="active" href="Logout.php">Log out</a></li>
+    <li style="float:right"><a class="active" href="../www/Logout.php">Log out</a></li>
   </ul>
   <div class="container">
     <div class="content1">
       <div class="vertical-menu">
         <a href="#" class="active">Dashboard</a>
-        <a href="Register-course.php">View
+        <a href="../www/Register-course.php">View
           Courses/Registration</a>
-        <a href="Courses-List.php">My Courses</a>
+        <a href="../www/Courses-List.php">My Courses</a>
       </div>
       <div class="calender">
         <div class="month">
@@ -151,7 +149,7 @@ $result = mysqli_query($conn, $sql);
   </div>
 
 
-  <script src="slide_show.js" defer></script>
+  <script src="../src/js/slide_show.js" defer></script>
 </body>
     <footer>
         <p> Contact us </p>

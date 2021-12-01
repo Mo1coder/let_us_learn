@@ -63,7 +63,7 @@ if(strtoupper($_SERVER["REQUEST_METHOD"]) == "POST"){
 <!-- Font Awesome CSS -->
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
 <link rel='stylesheet' href='../src/css/master.css'>
-<link rel='stylesheet' href="../src/css/register.css"
+
 
         
     </head>
@@ -164,7 +164,7 @@ if(strtoupper($_SERVER["REQUEST_METHOD"]) == "POST"){
     font-family: 'Lato', sans-serif;
     color: #000;
       /* The image used */
-    background: url("Coverpage2.jpg");
+    background: url("../src/imgs/Coverpage2.jpg");
       /* Full height */
     height: 100%;
       /* Center and scale the image nicely */

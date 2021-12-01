@@ -34,7 +34,7 @@ if(strtoupper($_SERVER["REQUEST_METHOD"]) == "POST"){
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
         <!-- Font Awesome CSS -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
-        <link rel='stylesheet' href='master.css'>
+        <link rel='stylesheet' href='../src/css/master.css'>
         
         
     </head>
@@ -59,7 +59,7 @@ if(strtoupper($_SERVER["REQUEST_METHOD"]) == "POST"){
         <a href="#" class="active">Dashboard</a>
         <a href="Register-course.php">View
           Courses/Registration</a>
-        <a href="Courses-List.php">My Courses</a>
+        <a href="./www/Courses-List.php">My Courses</a>
       </div>
       <div class="calender">
         <div class="month">
@@ -142,30 +142,19 @@ if(strtoupper($_SERVER["REQUEST_METHOD"]) == "POST"){
                 
             </article>
         </main>
-        <!-- <div id="myModal" class="modal"> -->
-            <!-- Modal content -->
-            <!-- <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Tutor Name: Ahmed Ali</p>
-                <p>Date: ....</p>
-                <p>Time: 2:30-3:20 PM</p>
-            </div>
-        </div>
-        <script src="modal.js"></script> -->
+        
     </body>
 </html>
 
 <style>
     body {
-   /* background: #152733;  /* fallback for old browsers */
-   /* background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
     color: #000;
       /* The image used */
-    background: url("Coverpage2.jpg");
+    background: url("../src/imgs/Coverpage2.jpg"); 
       /* Full height */
     height: 100%;
       /* Center and scale the image nicely */
@@ -173,3 +162,5 @@ if(strtoupper($_SERVER["REQUEST_METHOD"]) == "POST"){
     background-repeat: no-repeat;
     background-size: cover;}
 }
+    
+</style>

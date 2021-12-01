@@ -9,8 +9,8 @@
   <!-- Font Awesome CSS -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
 
-  <link rel='stylesheet' href='master.css'>
-
+  <link rel='stylesheet' href='../src/css/master.css'>
+ 
 
 </head>
 
@@ -94,19 +94,19 @@
       <div class="slideshow-container">
 
         <div class="mySlides fade" style="display: block;">
-          <img src="1.jpg" style="width:100%;height: 75vh;">
+          <img src="../src/imgs/1.jpg" style="width:100%;height: 75vh;">
         </div>
 
         <div class="mySlides fade">
-          <img src="2.jpg" style="width:100%;height: 75vh;">
+          <img src="../src/imgs/2.jpg" style="width:100%;height: 75vh;">
         </div>
 
         <div class="mySlides fade">
-          <img src="3.jpg" style="width:100%;height: 75vh;">
+          <img src="../src/imgs/3.jpg" style="width:100%;height: 75vh;">
         </div>
 
         <div class="mySlides fade">
-          <img src="4.jpg" style="width:100%;height: 75vh;">
+          <img src="../src/imgs/4.jpg" style="width:100%;height: 75vh;">
         </div>
           
 
@@ -130,7 +130,7 @@
 
   </div>
 
-  <script src="slide_show.js" defer></script>
+  <script src="../src/js/slide_show.js" defer></script>
 </body>
 
 </html>

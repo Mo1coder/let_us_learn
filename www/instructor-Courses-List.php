@@ -1,11 +1,8 @@
 <?php 
+include("../config/db_login.php");
 session_start();
 
 // configuer database
-$server = "localhost";
-$user_db = "root";
-$pass_db = "";
-$db = "learn";
 
 $message = "";
 $conn = mysqli_connect($server, $user_db, $pass_db, $db);
