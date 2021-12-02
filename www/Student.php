@@ -19,7 +19,7 @@
   <!--<h1 style= "color:white">Let us Learn</h1>-->
 
   <ul>
-    <li><a class="active" href="file:///Users/nawafalshuhail/Desktop/Login%20Page%20files/Login.html">Home</a></li>
+    <li><a class="active" href="Login.html">Home</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#about">Link 1</a></li>
     <li><a href="#about">Link 2</a></li>
