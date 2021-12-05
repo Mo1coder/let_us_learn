@@ -21,8 +21,26 @@ SET time_zone = "+00:00";
 -- Database: `learn`
 --
 
+
 -- --------------------------------------------------------
 
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `ad_id` int(250) NOT NULL,
+  `password` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`ad_id`, `password`) VALUES
+(1991, 'admin123');
+
+-- --------------------------------------------------------
 --
 -- Table structure for table `course`
 --
@@ -84,6 +102,13 @@ INSERT INTO `user` (`id`, `fname`, `lname`, `email`, `password`, `type`) VALUES
 --
 
 --
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`ad_id`);
+
+
+--
 -- Indexes for table `course`
 --
 ALTER TABLE `course`
@@ -123,6 +148,11 @@ ALTER TABLE `registration`
   ADD CONSTRAINT `registration_ibfk_3` FOREIGN KEY (`course`) REFERENCES `course` (`course_title`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+
